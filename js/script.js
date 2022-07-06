@@ -56,6 +56,27 @@ posts.forEach((element, index) => {
     parentWrapper(newContainer);
 });
 
+const likeButtons = document.querySelectorAll('a.like-button');
+
+const likesCounter = document.querySelectorAll('.js-likes-counter');
+
+for (let index = 0; ((index < likeButtons.length) && (index < likesCounter.length)); index++) {
+
+    console.log(likeButtons[index]);
+    console.log(likesCounter[index]);
+
+    likeButtons[index].addEventListener('click', function () {
+
+        console.log(index);
+
+        likeButtons[index].classList.toggle('like-button--liked');
+
+        posts[index].likes++
+
+        likesCounter[index].innerHTML = posts[index].likes;
+
+    });
+}
 
 function parentWrapper(element) {
 

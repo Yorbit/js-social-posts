@@ -48,3 +48,40 @@ const posts = [
         "created": "05-02-2022"
     },
 ];
+
+posts.forEach((element, index) => {
+
+    const newContainer = createElement(element);
+
+    parentWrapper(newContainer);
+});
+
+function parentWrapper(element) {
+
+    const wrapper = document.getElementById('container');
+
+    wrapper.append(element);
+
+    return wrapper;
+}
+
+function createElement(posts) {
+
+    const newElement = document.createElement('div');
+
+    newElement.className = ('post');
+
+    newElement.innerHTML = `
+    <div class="post__header">
+        <div class="post-meta">
+            <div class="post-meta__icon">
+                <img class="profile-pic" src="${posts.author.image}" alt="${posts.author.name}">
+            </div>
+            <div class="post-meta__data">
+                <div class="post-meta__author">${posts.author.name}</div>
+                <div class="post-meta__time">${posts.created}</div>
+            </div>
+        </div>
+    </div>
+    
+}

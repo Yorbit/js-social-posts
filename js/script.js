@@ -56,6 +56,7 @@ posts.forEach((element, index) => {
     parentWrapper(newContainer);
 });
 
+
 function parentWrapper(element) {
 
     const wrapper = document.getElementById('container');
@@ -83,5 +84,22 @@ function createElement(posts) {
             </div>
         </div>
     </div>
-    
+    <div class="post__text">${posts.content}</div>
+    <div class="post__image">
+        <img src="${posts.media}" alt="">
+    </div>
+    <div class="post__footer">
+        <div class="likes js-likes>
+            <div class="likes__cta">
+                <a class="like-button js-like-button" href="#" data-postid="${posts.id}">
+                    <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>
+                    <span class="like-button__label">Mi Piace</span>
+                </a>
+            </div>
+            <div class="likes__counter">
+                Piace a <b id="${posts.id}" class="js-likes-counter">${posts.likes}</b> persone
+            </div>
+        </div>
+    </div>`
+    return newElement;
 }

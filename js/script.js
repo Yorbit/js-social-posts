@@ -70,7 +70,6 @@ for (let index = 0; ((index < likeButtons.length) && (index < likesCounter.lengt
         posts[index].likes++
 
         likesCounter[index].innerHTML = posts[index].likes;
-
     });
 }
 
@@ -106,7 +105,7 @@ function createElement(posts) {
         <img src="${posts.media}" alt="">
     </div>
     <div class="post__footer">
-        <div class="likes js-likes>
+        <div class="likes js-likes">
             <div class="likes__cta">
                 <a class="like-button js-like-button" href="#" data-postid="${posts.id}">
                     <i class="like-button__icon fas fa-thumbs-up" aria-hidden="true"></i>

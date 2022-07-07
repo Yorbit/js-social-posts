@@ -62,8 +62,8 @@ for (let index = 0; ((index < likeButtons.length) && (index < likesCounter.lengt
     console.log(likesCounter[index]);
 
     likeButtons[index].addEventListener('click', function () {
-
-        console.log(index);
+        (Event)
+        event.preventDefault();
 
         likeButtons[index].classList.toggle('like-button--liked');
 

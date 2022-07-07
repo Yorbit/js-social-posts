@@ -8,7 +8,6 @@ const posts = [
             "image": "https://unsplash.it/300/300?image=77"
         },
         "likes": 112,
-        "is_liked": true,
         "created": "Yesterday"
     },
     {
@@ -20,7 +19,6 @@ const posts = [
             "image": "https://unsplash.it/300/300?image=61"
         },
         "likes": 93,
-        "is_liked": true,
         "created": "About a month ago"
     },
     {
@@ -32,7 +30,6 @@ const posts = [
             "image": "https://unsplash.it/300/300?image=50"
         },
         "likes": 1223,
-        "is_liked": true,
         "created": "05-22-2022"
     },
     {
@@ -44,7 +41,6 @@ const posts = [
             "image": "https://unsplash.it/300/300?image=55"
         },
         "likes": 1623,
-        "is_liked": true,
         "created": "05-02-2022"
     },
 ];
